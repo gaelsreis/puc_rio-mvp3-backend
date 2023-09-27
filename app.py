@@ -129,8 +129,8 @@ def del_produto(query: ProdutoBuscaSchema):
 
 
 @app.delete('/limpeza', tags=[produto_tag], responses={"200": ProdutoDelSchema, "404": ErrorSchema})
-def del_produtos(query: ProdutoBuscaSchema):
-    """Deleta um produto pelo nome informado
+def del_produtos():
+    """Deleta todos os produtos
 
     Retorna uma mensagem de confirmação da remoção.
     """
